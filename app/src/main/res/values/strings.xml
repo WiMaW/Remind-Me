@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Remind Me</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_view_heading_person_to_meet">Person to meet</string>
+    <string name="text_view_heading_person_to_call">Person to call</string>
+    <string name="text_view_heading_place_to_visit">Place to visit</string>
+    <string name="text_view_heading_family_time_to_spend">Family time to spend</string>
+    <string name="text_view_heading_book_to_read">Book to read</string>
+    <string name="text_view_heading_music_to_listen">Music album to listen</string>
+    <string name="text_view_heading_movie_to_watch">Movie to watch</string>
+    <string name="text_view_heading_food_to_try">Food to try</string>
+</resources>

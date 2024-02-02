@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".TimeForMeFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_book_to_read"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_view_icon_book_to_read"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/icon_book"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Icon"  />
+
+            <TextView
+                android:id="@+id/text_view_heading_book_to_read"
+                style="@style/HeadingsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="6dp"
+                android:text="@string/text_view_heading_book_to_read"
+                app:layout_constraintLeft_toRightOf="@id/image_view_icon_book_to_read"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_input_book_to_read"
+                style="@style/InputTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="@+id/text_view_heading_book_to_read"
+                app:layout_constraintTop_toBottomOf="@id/text_view_heading_book_to_read"
+                tools:text="Example Book"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/card_view_music_to_listen"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_view_icon_music_to_listen"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/music_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Icon"  />
+
+            <TextView
+                android:id="@+id/text_view_heading_music_to_listen"
+                style="@style/HeadingsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="6dp"
+                android:text="@string/text_view_heading_music_to_listen"
+                app:layout_constraintLeft_toRightOf="@id/image_view_icon_music_to_listen"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_input_music_to_listen"
+                style="@style/InputTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="@id/text_view_heading_music_to_listen"
+                app:layout_constraintTop_toBottomOf="@id/text_view_heading_music_to_listen"
+                tools:text="Example Album" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_movie_to_watch"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_view_icon_movie_to_watch"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/icon_movie"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Icon" />
+
+            <TextView
+                android:id="@+id/text_view_heading_movie_to_watch"
+                style="@style/HeadingsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="6dp"
+                android:text="@string/text_view_heading_movie_to_watch"
+                app:layout_constraintLeft_toRightOf="@id/image_view_icon_movie_to_watch"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_input_movie_to_watch"
+                style="@style/InputTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="@id/text_view_heading_movie_to_watch"
+                app:layout_constraintTop_toBottomOf="@id/text_view_heading_movie_to_watch"
+                tools:text="Example movie" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_food_to_try"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="30dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_view_icon_food_to_try"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="10dp"
+                android:src="@drawable/food_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Icon"  />
+
+            <TextView
+                android:id="@+id/text_view_heading_food_to_try"
+                style="@style/HeadingsStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="6dp"
+                android:text="@string/text_view_heading_food_to_try"
+                app:layout_constraintLeft_toRightOf="@id/image_view_icon_food_to_try"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_input_food_to_try"
+                style="@style/InputTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                app:layout_constraintStart_toStartOf="@id/text_view_heading_food_to_try"
+                app:layout_constraintTop_toBottomOf="@id/text_view_heading_food_to_try"
+                tools:text="Example food" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RemindMe" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorOnPrimary">@color/onPrimary</item>
+        <item name="colorPrimary">@color/primary</item>
+    </style>
+
+    <style name="Theme.RemindMe" parent="Base.Theme.RemindMe" />
+
+    <style name="HeadingsStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="InputTextStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?attr/colorOnPrimary</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Icon">
+        <item name="tint">?attr/colorPrimary</item>
+    </style>
+</resources>
